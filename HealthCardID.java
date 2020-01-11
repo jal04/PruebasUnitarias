@@ -5,7 +5,9 @@ package data;
 final public class HealthCardID {
     private final String personalID;
 
-    public HealthCardID(String code) { 
+    public HealthCardID(String code) {
+        if(code==null) throw NullPointerException("code is null");
+        if(code!=correct_format) throw IncorrectFormatException("Incorrect format code.");
         this. personalID = code; 
     }
     public String getPersonalID() {
