@@ -1,4 +1,8 @@
 package services; // Package for involved services
+
+import data.HealthCardID;
+import data.ProductID;
+
 /**
  * External service for managing and storing ePrescriptions from population
  */

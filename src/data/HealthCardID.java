@@ -1,18 +1,18 @@
 package data;
 /**
-* The personal identifying code in the National Health Service.
-*/
+ * The personal identifying code in the National Health Service.
+ */
 final public class HealthCardID {
     private final String personalID;
 
-    public HealthCardID(String code) {
-        if(code==null) throw NullPointerException("code is null");
-        if(code!=correct_format) throw IncorrectFormatException("Incorrect format code.");
-        this. personalID = code; 
+    public HealthCardID(String code) throws Exception {
+        if(code==null) throw new NullPointerException("code is null");
+        if(code.length()<16) throw new Exception("Incorrect format code.");
+        this. personalID = code;
     }
     public String getPersonalID() {
         return personalID;
-        }
+    }
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

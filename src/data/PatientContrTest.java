@@ -1,3 +1,5 @@
+package data;
+
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
@@ -5,7 +7,7 @@ public class PatientContrTest {
     @Test
     void testConstructorNullCode() {
         Exception exception = assertThrows(NullPointerException.class, () -> {
-            PatientContr amount = new PatientContr(null);
+            new PatientContr(null);
         });
 
         String expectedMessage = "amount is null";

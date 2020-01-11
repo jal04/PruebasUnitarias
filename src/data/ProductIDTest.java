@@ -1,3 +1,5 @@
+package data;
+
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
@@ -5,7 +7,7 @@ public class ProductIDTest {
     @Test
     void testConstructorNullCode() {
         Exception exception = assertThrows(NullPointerException.class, () -> {
-            ProductID universalpID = new ProductID(null);
+            new ProductID(null);
         });
 
         String expectedMessage = "code is null";
@@ -16,8 +18,8 @@ public class ProductIDTest {
 
     @Test
     void testConstructorIncorrectFormatCode() {
-        Exception exception = assertThrows(IncorrectFormatException.class, () -> {
-            ProductID universalpID = new ProductID(incorrectFormat);
+        Exception exception = assertThrows(Exception.class, () -> {
+            new ProductID("123456");
         });
 
         String expectedMessage = "Incorrect format code.";

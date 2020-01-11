@@ -1,18 +1,18 @@
 package data;
 /**
-* The product identifying code in the National Health Service.
-*/
+ * The product identifying code in the National Health Service.
+ */
 final public class ProductID {
     private final String productID;
 
-    public ProductID(String code) {
-        if(code==null) throw NullPointerException("code is null");
-        if(code!=correct_format) throw IncorrectFormatException("Incorrect format code.");
-        this. productID = code; 
+    public ProductID(String code) throws Exception {
+        if(code==null) throw new NullPointerException("code is null");
+        if(code.length()<16) throw new Exception("Incorrect format code.");   //En el caso en que un mal formato sea que tenga menos de 16 digitos.
+        this. productID = code;
     }
     public String getProductID() {
         return productID;
-        }
+    }
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
