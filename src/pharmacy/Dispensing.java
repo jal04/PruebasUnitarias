@@ -13,7 +13,10 @@ public class Dispensing {
     private Date initDate, finalDate; // The period
     private boolean isCompleted;
  ??? // The set of medicines to dispense and its control, among others
-    public Dispensing() {. . .} // Makes some inicialization
+    public Dispensing() {
+        this.isCompleted=false;
+        this.initDate=new Date();
+    } // Makes some inicialization
     public boolean dispensingEnabled() throws DispensingNotAvailableException{
         if(new Date().after(initDate)){
             return true;
@@ -21,7 +24,11 @@ public class Dispensing {
             throw new DispensingNotAvailableException();
         }
     }
-    public void setProductAsDispensed(ProductID prodID) { . . . }
-    public void setCompleted() { . . . }
+    public void setProductAsDispensed(ProductID prodID) {
+
+    }
+    public void setCompleted() {
+        this.isCompleted==true;
+    }
  ??? // the rest of getters and setters
 }

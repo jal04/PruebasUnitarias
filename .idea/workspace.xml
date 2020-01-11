@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f2dc1b58-3a76-40e5-91e0-ae86ccb9038d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pharmacy/DispensingNotAvailableException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pharmacy/MedicineDispensingLine.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pharmacy/ProductSaleLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pharmacy/ProductSaleLine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/Dispensing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pharmacy/Dispensing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/NationalHealthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/NationalHealthService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/ProductSpecification.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pharmacy/Dispensing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pharmacy/Dispensing.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
