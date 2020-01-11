@@ -7,7 +7,7 @@ final public class HealthCardID {
 
     public HealthCardID(String code) throws Exception {
         if(code==null) throw new NullPointerException("code is null");
-        if(code.length()<16) throw new Exception("Incorrect format code.");
+        if(code.length()!=12) throw new Exception("Incorrect format code.");
         this. personalID = code;
     }
     public String getPersonalID() {
