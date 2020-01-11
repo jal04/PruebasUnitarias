@@ -1,7 +1,11 @@
 package services; // Package for involved services
 
 import data.HealthCardID;
+import data.PatientContr;
 import data.ProductID;
+
+import java.net.ConnectException;
+import java.util.List;
 
 /**
  * External service for managing and storing ePrescriptions from population
