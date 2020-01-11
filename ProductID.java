@@ -5,7 +5,9 @@ package data;
 final public class ProductID {
     private final String productID;
 
-    public ProductID(String code) { 
+    public ProductID(String code) {
+        if(code==null) throw NullPointerException("code is null");
+        if(code!=correct_format) throw IncorrectFormatException("Incorrect format code.");
         this. productID = code; 
     }
     public String getProductID() {

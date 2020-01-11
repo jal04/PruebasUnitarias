@@ -5,7 +5,7 @@ package data;
 final public class PatientContr {
     private final BigDecimal amount_paid;  //porcentaje que paga el paciente
 
-    public ProductID(String cantidad) { 
+    public ProductID(String cantidad) {
         this.amount_paid = cantidad; 
     }
     public String getAmountPaid() {
