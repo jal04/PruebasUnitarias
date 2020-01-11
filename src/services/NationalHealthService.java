@@ -3,6 +3,7 @@ package services; // Package for involved services
 import data.HealthCardID;
 import data.PatientContr;
 import data.ProductID;
+import pharmacy.Dispensing;
 
 import java.net.ConnectException;
 import java.util.List;
