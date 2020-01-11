@@ -1,6 +1,7 @@
 package data;
-
 import static org.junit.jupiter.api.Assertions.*;
+
+import data.PatientContr;
 import org.junit.jupiter.api.Test;
 
 public class PatientContrTest {
