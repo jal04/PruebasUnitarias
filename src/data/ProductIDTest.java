@@ -27,4 +27,25 @@ public class ProductIDTest {
 
         assertTrue(actualMessage.contains(expectedMessage));
     }
+
+    @Test
+    public void TesttoString() throws Exception {
+        ProductID universalpID = new ProductID("123456789abd");
+        String universalpID2 = "ProductID{product code='123456789abd'}";
+        assertEquals(universalpID2,universalpID.toString());
+    }
+
+    @Test
+    public void TestEquals() throws Exception {
+        ProductID universalpID = new ProductID("123456789abd");
+        ProductID universalpID2 = new ProductID("123456789abd");
+        assertTrue(universalpID.equals(universalpID2));
+    }
+
+    @Test
+    public void TestHashCode() throws Exception {
+        ProductID universalpID = new ProductID("123456789abd");
+        ProductID universalpID2 = new ProductID("123456789abd");
+        assertTrue(universalpID.hashCode()==universalpID2.hashCode());
+    }
 }
