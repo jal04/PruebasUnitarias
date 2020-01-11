@@ -2,10 +2,12 @@ package pharmacy;
 
 import data.ProductID;
 
-public class ProductSaleLine {
-    int subtotal;
+import java.math.BigDecimal;
 
-    public ProductSaleLine(int subtotal){
+public class ProductSaleLine {
+    BigDecimal subtotal;
+
+    public ProductSaleLine(BigDecimal subtotal){
         this.subtotal=subtotal;
     }
 }

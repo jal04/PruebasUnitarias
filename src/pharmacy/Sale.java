@@ -4,7 +4,9 @@ import data.PatientContr;
 import data.ProductID;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 /**
  * Package for the classes involved in the use case Suply next dispensing
@@ -12,25 +14,40 @@ import java.util.Date;
 public class Sale { // A class that represents the sale of medicines
     private int saleCode;
     private Date date;
-
     private BigDecimal amount;
     private boolean isClosed; // flag to know if the sale is closed
- //??? // Its components, among others
-    public Sale (int saleCode, Date date, String amount, boolean isClosed) {
-        this.saleCode=saleCode;
-        this.date=date;
-        this.amount=new BigDecimal(amount);
-        this.isClosed=isClosed;
+    // Its components, among others
+    private ArrayList<ProductSaleLine> productSaleLines;
+
+    public Sale () {
+        this.amount=new BigDecimal("0");
+        this.isClosed=false;
+        productSaleLines = new ArrayList<ProductSaleLine>();
     } // Assigns the current date, a code to the sale, etc.
     public void addLine(ProductID prodID, BigDecimal price, PatientContr contr)
             throws SaleClosedException {
-        new ProductSaleLine(subtotal);
+        productSaleLines.add( new ProductSaleLine(price.multiply(contr.getAmountPaid())) );
     }
-    private void calculateAmount() { . . . }
-    private void addTaxes() throws SaleClosedException { . . . }
-    public void calculateFinalAmount() throws SaleClosedException { . . . }
-    public BigDecimal getAmount() { . . . }
-    private void setClosed() { . . . }
-    public boolean isClosed() { . . . }
-//??? // the rest of getters, setters and methods
+    private void calculateAmount() {
+        for (int i=0; i < productSaleLines.size(); i++){
+            amount.add(productSaleLines.get(i).subtotal);
+        }
+    }
+    private void addTaxes() throws SaleClosedException {
+        amount=amount.add(amount.multiply(new BigDecimal("0.21")));
+    }
+    public void calculateFinalAmount() throws SaleClosedException {
+        this.calculateAmount();
+        this.addTaxes();
+    }
+    public BigDecimal getAmount() {
+        return amount;
+    }
+    private void setClosed() {
+        this.isClosed=true;
+    }
+    public boolean isClosed() {
+        return this.isClosed;
+    }
+    // the rest of getters, setters and methods
 }
