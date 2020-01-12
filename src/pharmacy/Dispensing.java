@@ -36,8 +36,14 @@ public class Dispensing {
         MedicineDispensingLine medicineDispensingLine = productSaleLine.getMedicineDispensingLine();
         medicineDispensingLine.productAcquired();
     }
-    public void setCompleted() {
-        this.isCompleted=true;
+    public void setCompleted() throws DispensingNotCompletedException, DispensingNotAvailableException{
+        if(dispensingEnabled()) {
+            for (MedicineDispensingLine i : medicines)
+                if (!i.acquired) {
+                    throw new DispensingNotCompletedException("More to dispense.\n");
+                }
+            this.isCompleted = true;
+        }
     }
     // the rest of getters and setters
 }

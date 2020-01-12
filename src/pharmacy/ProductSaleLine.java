@@ -14,7 +14,7 @@ public class ProductSaleLine {
         this.subtotal=subtotal;
     }
 
-    public MedicineDispensingLine getMedicineDispensingLine() {
-        return medicineDispensingLine;
+    public ProductID getProductID(){
+        return this.productID;
     }
 }

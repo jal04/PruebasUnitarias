@@ -13,6 +13,6 @@ public class MedicineDispensingLine {
         this.acquired=true;
     }
     public ProductID getProductID(){
-        return productSpecification.getUPCcode();
+        return this.productSpecification.getUPCcode();
     }
 }
