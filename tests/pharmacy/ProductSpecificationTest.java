@@ -2,19 +2,18 @@ package pharmacy;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import data.ProductID;
+import data.exceptions.FormatException;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import java.math.BigDecimal;
+
 class ProductSpecificationTest {
     ProductSpecification product;
-    import Data.Exceptions.BadFormatException;
-    import Data.Exceptions.NullObjectException;
-    import Data.ProductID;
-    import Pharmacy.ProductSpecification;
-    import org.junit.jupiter.api.BeforeEach;
-    import org.junit.jupiter.api.Test;
-    import static org.junit.Assert.assertEquals;
-    import java.math.BigDecimal;
+
 
     @BeforeEach
-    public void setUp() throws NullObjectException, BadFormatException {
+    public void setUp() throws NullPointerException, FormatException {
         product = new ProductSpecification(new ProductID("123456789012"), "Bonito, Barato", new BigDecimal("7.234"));
     }
 

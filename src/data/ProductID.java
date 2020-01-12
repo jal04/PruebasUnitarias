@@ -8,7 +8,7 @@ import data.exceptions.FormatException;
 final public class ProductID {
     private final String productID;
 
-    public ProductID(String code) throws Exception {
+    public ProductID(String code) throws FormatException {
         if(code==null) throw new NullPointerException("code is null");
         if(code.length()!=12) throw new FormatException("Incorrect format code.");   //En el caso en que un mal formato sea que tenga menos de 16 digitos.
         this.productID = code;

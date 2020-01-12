@@ -1,10 +1,14 @@
 package pharmacy;
 
 import data.ProductID;
+import data.exceptions.FormatException;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import pharmacy.exceptions.DispensingNotAvailableException;
 import pharmacy.exceptions.DispensingNotCompletedException;
 
 import java.math.BigDecimal;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -17,18 +21,18 @@ class DispensingTest {
     ProductSpecification product1, product2, product3;
 
     @BeforeEach
-    public void setUp() throws NullObjectException, BadFormatException, ParseException {
+    public void setUp() throws NullPointerException, FormatException, ParseException {
         byte order = 0x0a;
-        product1 = new ProductSpecification(new ProductID("123456789012"), "Carn", new BigDecimal(3));
-        product2 = new ProductSpecification(new ProductID("123456789013"), "Peix", new BigDecimal(6));
-        product3 = new ProductSpecification(new ProductID("123456789014"), "Ous", new BigDecimal(4));
-        List<ProductSpecification> products = new ArrayList<>();
+        product1 = new ProductSpecification(new ProductID("123456789012"), "A", new BigDecimal(2));
+        product2 = new ProductSpecification(new ProductID("123456789013"), "B", new BigDecimal(4));
+        product3 = new ProductSpecification(new ProductID("123456789014"), "C", new BigDecimal(3));
+        ArrayList<ProductSpecification> products = new ArrayList<>();
         products.add(product1);
         products.add(product2);
         products.add(product3);
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
         Date end_date = simpleDateFormat.parse ( "2022-12-22" );
-        dispense = new Dispensing(order, new Date(0), end_date, products);
+        dispense = new Dispensing(order, (ArrayList<ProductSpecification>) products);
     }
 
     @Test

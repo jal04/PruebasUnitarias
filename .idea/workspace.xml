@@ -2,12 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f2dc1b58-3a76-40e5-91e0-ae86ccb9038d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/tests/data/HealthCardIdTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Pruebas-Unitarias/data/ProductID.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pruebas-Unitarias/data/ProductID.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Pruebas-Unitarias/pharmacy/Dispensing.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pruebas-Unitarias/pharmacy/Dispensing.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Pruebas-Unitarias/pharmacy/MedicineDispensingLine.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pruebas-Unitarias/pharmacy/MedicineDispensingLine.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Pruebas-Unitarias/pharmacy/ProductSpecification.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pruebas-Unitarias/pharmacy/ProductSpecification.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Pruebas-Unitarias/pharmacy/Sale.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Pruebas-Unitarias/pharmacy/Sale.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/HealthCardID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/HealthCardID.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/ProductID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/ProductID.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pharmacy/Dispensing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pharmacy/Dispensing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pharmacy/MedicineDispensingLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pharmacy/MedicineDispensingLine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pharmacy/ProductSpecification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pharmacy/ProductSpecification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pharmacy/Sale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pharmacy/Sale.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/data/HealthCardIDTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/pharmacy/DispensingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/pharmacy/DispensingTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/pharmacy/ProductSpecificationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/pharmacy/ProductSpecificationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/pharmacy/SaleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/pharmacy/SaleTest.java" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,7 +41,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1WG9XWorNcPpBBaJNCufqxfqsxL" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -55,14 +70,12 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="pharmacy" />
       <recent name="data" />
+      <recent name="pharmacy" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="data" />
-      <recent name="pharmacy.exceptions" />
-      <recent name="pharmacy" />
-      <recent name="services" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\josem\Desktop\PruebasUnitarias\tests\data" />
+      <recent name="C:\Users\josem\Desktop\PruebasUnitarias\tests" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="pharmacy" />
@@ -71,22 +84,112 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\josem\Desktop\PruebasUnitarias\tests\data" />
-      <recent name="C:\Users\josem\Desktop\PruebasUnitarias\tests" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="data" />
+      <recent name="pharmacy.exceptions" />
+      <recent name="pharmacy" />
+      <recent name="services" />
     </key>
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
+  <component name="RunDashboard">
+    <option name="ruleStates">
       <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager" selected="JUnit.SaleTest">
+    <configuration name="DispensingTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Pruebas-Unitarias" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pharmacy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pharmacy" />
+      <option name="MAIN_CLASS_NAME" value="pharmacy.DispensingTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DispensingTest.dispensingEnabledTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Pruebas-Unitarias" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pharmacy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pharmacy" />
+      <option name="MAIN_CLASS_NAME" value="pharmacy.DispensingTest" />
+      <option name="METHOD_NAME" value="dispensingEnabledTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HealthCardIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Pruebas-Unitarias" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="data.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="data" />
+      <option name="MAIN_CLASS_NAME" value="data.HealthCardIdTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HealthCardIdTest.testConstructorNullCode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Pruebas-Unitarias" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="data.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="data" />
+      <option name="MAIN_CLASS_NAME" value="data.HealthCardIdTest" />
+      <option name="METHOD_NAME" value="testConstructorNullCode" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SaleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Pruebas-Unitarias" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pharmacy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pharmacy" />
+      <option name="MAIN_CLASS_NAME" value="pharmacy.SaleTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.SaleTest" />
+        <item itemvalue="JUnit.DispensingTest" />
+        <item itemvalue="JUnit.HealthCardIdTest" />
+        <item itemvalue="JUnit.HealthCardIdTest.testConstructorNullCode" />
+        <item itemvalue="JUnit.DispensingTest.dispensingEnabledTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />

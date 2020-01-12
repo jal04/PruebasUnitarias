@@ -67,4 +67,8 @@ public class Sale { // A class that represents the sale of medicines
             }
         } throw new NotProductSaleLineException("ProductSaleLine not exist.");
     }
+
+    public ProductID getProductID(int i) {
+        return this.productSaleLines.get(i).productID;
+    }
 }

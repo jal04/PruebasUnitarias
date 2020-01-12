@@ -2,13 +2,15 @@ package data;
 
 import data.exceptions.FormatException;
 
+import java.text.Format;
+
 /**
  * The personal identifying code in the National Health Service.
  */
 final public class HealthCardID {
     private final String personalID;
 
-    public HealthCardID(String code) throws Exception {
+    public HealthCardID(String code) throws FormatException {
         if(code==null) throw new NullPointerException("code is null");
         if(code.length()!=12) throw new FormatException("Incorrect format code.");
         this. personalID = code;

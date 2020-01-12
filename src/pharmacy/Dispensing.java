@@ -38,7 +38,7 @@ public class Dispensing {
     public void setProductAsDispensed(ProductID prodID) throws DispensingNotAvailableException {
         if(dispensingEnabled()) {
             for (MedicineDispensingLine medicine : medicines) {
-                if (medicine.productSpecification.UPCcode == prodID.getProductID()) {
+                if (medicine.productSpecification.UPCcode == prodID) {
                     medicine.acquired = true;
                 }
             }
@@ -54,6 +54,14 @@ public class Dispensing {
             this.finalDate=new Date();
             this.isCompleted = true;
         }
+    }
+
+    public boolean getAcquired(int i) {
+        return medicines.get(i).getAcquired();
+    }
+
+    public boolean getIsCompleted() {
+        return isCompleted;
     }
     // the rest of getters and setters
 }
