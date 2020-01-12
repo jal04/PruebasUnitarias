@@ -11,6 +11,7 @@ public class ProductSaleLine {
     MedicineDispensingLine medicineDispensingLine;
     public ProductSaleLine(ProductID productID, BigDecimal subtotal){
         this.productID=productID;
+        this.productSpecification = new ProductSpecification();
         this.medicineDispensingLine = new MedicineDispensingLine(productID, productSpecification);
         this.subtotal=subtotal;
     }
