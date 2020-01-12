@@ -23,9 +23,9 @@ import static org.junit.jupiter.api.Assertions.*;
             id1 = new ProductID("123456789012");
             id2 = new ProductID("123456789013");
             id3 = new ProductID("123456789014");
-            product1 = new ProductSpecification(id1, "A", new BigDecimal(3));
-            product2 = new ProductSpecification(id2, "B", new BigDecimal(4));
-            product3 = new ProductSpecification(id3, "C", new BigDecimal(5));
+            product1 = new ProductSpecification(id1, "A", new BigDecimal("2"));
+            product2 = new ProductSpecification(id2, "B", new BigDecimal("2"));
+            product3 = new ProductSpecification(id3, "C", new BigDecimal("2"));
             contr = new PatientContr("0.4");
 
             sale = new Sale("123456789091");
@@ -48,7 +48,7 @@ import static org.junit.jupiter.api.Assertions.*;
             sale.addLine(product2.UPCcode, product2.getPrice(), contr);
             sale.addLine(product3.UPCcode, product3.getPrice(), contr);
             sale.calculateFinalAmount();
-            assertEquals(new BigDecimal("13").multiply(new BigDecimal("1.21").multiply(new BigDecimal("0.5"))), sale.getAmount());
+            assertEquals(new BigDecimal("6").add(new BigDecimal("6").multiply(new BigDecimal("0.21"))), sale.getAmount());
         }
 
         @Test

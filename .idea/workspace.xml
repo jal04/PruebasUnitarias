@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f2dc1b58-3a76-40e5-91e0-ae86ccb9038d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/pharmacy/Sale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pharmacy/Sale.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/Pruebas-Unitarias/pharmacy/SaleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Pruebas-Unitarias/pharmacy/SaleTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/pharmacy/SaleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/pharmacy/SaleTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -85,8 +87,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SaleTest.calculateFinalAmountTest">
-    <configuration name="DispensingTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.DispensingTest.getAcquiredTest">
+    <configuration name="DispensingTest.dispensingEnabledTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Pruebas-Unitarias" />
       <extension name="coverage">
         <pattern>
@@ -96,22 +98,24 @@
       </extension>
       <option name="PACKAGE_NAME" value="pharmacy" />
       <option name="MAIN_CLASS_NAME" value="pharmacy.DispensingTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="dispensingEnabledTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HealthCardIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DispensingTest.getAcquiredTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Pruebas-Unitarias" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="data.*" />
+          <option name="PATTERN" value="pharmacy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="data" />
-      <option name="MAIN_CLASS_NAME" value="data.HealthCardIdTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="pharmacy" />
+      <option name="MAIN_CLASS_NAME" value="pharmacy.DispensingTest" />
+      <option name="METHOD_NAME" value="getAcquiredTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -165,11 +169,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DispensingTest.getAcquiredTest" />
+        <item itemvalue="JUnit.DispensingTest.dispensingEnabledTest" />
+        <item itemvalue="JUnit.SaleTest" />
         <item itemvalue="JUnit.SaleTest.calculateFinalAmountTest" />
         <item itemvalue="JUnit.SaleTest.isClosedTest" />
-        <item itemvalue="JUnit.SaleTest" />
-        <item itemvalue="JUnit.DispensingTest" />
-        <item itemvalue="JUnit.HealthCardIdTest" />
       </list>
     </recent_temporary>
   </component>
