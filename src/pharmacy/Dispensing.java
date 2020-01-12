@@ -1,7 +1,11 @@
 package pharmacy;
 
 import data.ProductID;
+import pharmacy.exceptions.DispensingNotAvailableException;
+import pharmacy.exceptions.DispensingNotCompletedException;
+import pharmacy.exceptions.NotProductSaleLineException;
 
+import java.util.ArrayList;
 import java.util.Date;
 
 public class Dispensing {
@@ -13,9 +17,9 @@ public class Dispensing {
     private Date initDate, finalDate; // The period
     private boolean isCompleted;
     public Sale sale;
-    public List<MedicineDispensingLine> medicines;
+    public ArrayList<MedicineDispensingLine> medicines;
     // The set of medicines to dispense and its control, among others
-    public Dispensing(Sale sale, byte nOrder, List<ProductSpecification> medicines) {
+    public Dispensing(Sale sale, byte nOrder, ArrayList<ProductSpecification> medicines) {
         this.isCompleted=false;
         this.nOrder=nOrder
         this.initDate=new Date();
@@ -24,22 +28,26 @@ public class Dispensing {
             this.medicines.add(new MedicineDispensingLine(product));
         }
     } // Makes some inicialization
-    public boolean dispensingEnabled() throws DispensingNotAvailableException{
+    public boolean dispensingEnabled() throws DispensingNotAvailableException {
         if(new Date().after(initDate)){
             return true;
         }else{
             throw new DispensingNotAvailableException();
         }
     }
-    public void setProductAsDispensed(ProductID prodID) throws NotProductSaleLineException {
-        ProductSaleLine productSaleLine=sale.getProductSaleLine(prodID);
-        MedicineDispensingLine medicineDispensingLine = productSaleLine.getMedicineDispensingLine();
-        medicineDispensingLine.productAcquired();
+    public void setProductAsDispensed(ProductID prodID) throws DispensingNotAvailableException {
+        if(dispensingEnabled()) {
+            for (MedicineDispensingLine medicine : medicines) {
+                if (medicine.productSpecification.UPCcode == prodID) {
+                    medicine.acquired = true;
+                }
+            }
+        }
     }
     public void setCompleted() throws DispensingNotCompletedException, DispensingNotAvailableException{
         if(dispensingEnabled()) {
-            for (MedicineDispensingLine i : medicines)
-                if (!i.acquired) {
+            for (MedicineDispensingLine medicine : medicines)
+                if (!medicine.acquired) {
                     throw new DispensingNotCompletedException("More to dispense.\n");
                 }
             this.isCompleted = true;

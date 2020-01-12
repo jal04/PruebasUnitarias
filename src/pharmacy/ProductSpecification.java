@@ -2,10 +2,10 @@ package pharmacy;
 
 public class ProductSpecification {
 
-    int UPCcode;
+    String UPCcode;
     String description;
     int price;
-    public ProductSpecification(int UPCcode, String description, int price){
+    public ProductSpecification(String UPCcode, String description, int price){
         this.description=description;
         this.UPCcode=UPCcode;
         this.price=price;
@@ -22,7 +22,7 @@ public class ProductSpecification {
         this.price = price;
     }
 
-    public void setUPCcode(int UPCcode) {
+    public void setUPCcode(String UPCcode) {
         this.UPCcode = UPCcode;
     }
 
@@ -30,7 +30,7 @@ public class ProductSpecification {
         return price;
     }
 
-    public int getUPCcode() {
+    public String getUPCcode() {
         return UPCcode;
     }
 
