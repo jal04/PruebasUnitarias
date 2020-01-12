@@ -13,11 +13,16 @@ public class Dispensing {
     private Date initDate, finalDate; // The period
     private boolean isCompleted;
     public Sale sale;
+    public List<MedicineDispensingLine> medicines;
     // The set of medicines to dispense and its control, among others
-    public Dispensing(Sale sale) {
+    public Dispensing(Sale sale, byte nOrder, List<ProductSpecification> medicines) {
         this.isCompleted=false;
+        this.nOrder=nOrder
         this.initDate=new Date();
         this.sale = sale;
+        for(ProductSpecification product : medicines){
+            this.medicines.add(new MedicineDispensingLine(product));
+        }
     } // Makes some inicialization
     public boolean dispensingEnabled() throws DispensingNotAvailableException{
         if(new Date().after(initDate)){

@@ -29,7 +29,10 @@ public class Sale { // A class that represents the sale of medicines
     } // Assigns the current date, a code to the sale, etc.
     public void addLine(ProductID prodID, BigDecimal price, PatientContr contr)
             throws SaleClosedException {
-        productSaleLines.add( new ProductSaleLine( prodID, price.multiply(contr.getAmountPaid())) );
+        if(isClosed) {
+            throw new SaleClosedException("The sale is closed");
+        }
+        productSaleLines.add( new ProductSaleLine( prodID, price.multiply(contr.getAmountPaid()), contr) );
     }
     private void calculateAmount() {
         for (int i=0; i < productSaleLines.size(); i++){
@@ -37,6 +40,9 @@ public class Sale { // A class that represents the sale of medicines
         }
     }
     private void addTaxes() throws SaleClosedException {
+        if(isClosed) {
+            throw new SaleClosedException("The sale is closed");
+        }
         amount=amount.add(amount.multiply(new BigDecimal("0.21")));
     }
     public void calculateFinalAmount() throws SaleClosedException {
