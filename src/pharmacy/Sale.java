@@ -20,13 +20,14 @@ public class Sale { // A class that represents the sale of medicines
     private ArrayList<ProductSaleLine> productSaleLines;
 
     public Sale () {
+        this.date=new Date();
         this.amount=new BigDecimal("0");
         this.isClosed=false;
         productSaleLines = new ArrayList<ProductSaleLine>();
     } // Assigns the current date, a code to the sale, etc.
     public void addLine(ProductID prodID, BigDecimal price, PatientContr contr)
             throws SaleClosedException {
-        productSaleLines.add( new ProductSaleLine(price.multiply(contr.getAmountPaid())) );
+        productSaleLines.add( new ProductSaleLine( prodID, price.multiply(contr.getAmountPaid())) );
     }
     private void calculateAmount() {
         for (int i=0; i < productSaleLines.size(); i++){

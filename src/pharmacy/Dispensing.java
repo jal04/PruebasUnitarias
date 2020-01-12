@@ -12,7 +12,7 @@ public class Dispensing {
     private byte nOrder; // n. of order for this dispensing inside the treatment
     private Date initDate, finalDate; // The period
     private boolean isCompleted;
- ??? // The set of medicines to dispense and its control, among others
+    // The set of medicines to dispense and its control, among others
     public Dispensing() {
         this.isCompleted=false;
         this.initDate=new Date();
@@ -28,7 +28,7 @@ public class Dispensing {
 
     }
     public void setCompleted() {
-        this.isCompleted==true;
+        this.isCompleted=true;
     }
- ??? // the rest of getters and setters
+    // the rest of getters and setters
 }
