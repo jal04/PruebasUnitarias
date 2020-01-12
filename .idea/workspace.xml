@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f2dc1b58-3a76-40e5-91e0-ae86ccb9038d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/pharmacy/exceptions/SaleClosedException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pharmacy/exceptions/SaleClosedException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pharmacy/Dispensing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pharmacy/Dispensing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pharmacy/Sale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pharmacy/Sale.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pharmacy/exceptions/NotProductSaleLineException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pharmacy/exceptions/NotProductSaleLineException.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,6 +50,7 @@
       <recent name="data" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="pharmacy.exceptions" />
       <recent name="pharmacy" />
       <recent name="services" />
     </key>
