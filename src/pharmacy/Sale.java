@@ -48,6 +48,7 @@ public class Sale { // A class that represents the sale of medicines
     public void calculateFinalAmount() throws SaleClosedException {
         this.calculateAmount();
         this.addTaxes();
+        this.isClosed=true;
     }
     public BigDecimal getAmount() {
         return amount;
