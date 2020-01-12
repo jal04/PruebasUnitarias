@@ -18,12 +18,14 @@ public class Sale { // A class that represents the sale of medicines
     private boolean isClosed; // flag to know if the sale is closed
     // Its components, among others
     private ArrayList<ProductSaleLine> productSaleLines;
+    public Dispensing dispensing;
 
     public Sale () {
         this.date=new Date();
         this.amount=new BigDecimal("0");
         this.isClosed=false;
         productSaleLines = new ArrayList<ProductSaleLine>();
+        this.dispensing = new Dispensing(this);
     } // Assigns the current date, a code to the sale, etc.
     public void addLine(ProductID prodID, BigDecimal price, PatientContr contr)
             throws SaleClosedException {
@@ -50,5 +52,13 @@ public class Sale { // A class that represents the sale of medicines
     public boolean isClosed() {
         return this.isClosed;
     }
+
     // the rest of getters, setters and methods
+    public ProductSaleLine getProductSaleLine(ProductID productID) throws NotProductSaleLineException {
+        for (int i=0; i < productSaleLines.size(); i++){
+            if (productSaleLines.get(i).productID == productID){
+                return productSaleLines.get(i);
+            }
+        } throw new NotProductSaleLineException();
+    }
 }

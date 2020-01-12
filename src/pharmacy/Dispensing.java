@@ -12,10 +12,12 @@ public class Dispensing {
     private byte nOrder; // n. of order for this dispensing inside the treatment
     private Date initDate, finalDate; // The period
     private boolean isCompleted;
+    public Sale sale;
     // The set of medicines to dispense and its control, among others
-    public Dispensing() {
+    public Dispensing(Sale sale) {
         this.isCompleted=false;
         this.initDate=new Date();
+        this.sale = sale;
     } // Makes some inicialization
     public boolean dispensingEnabled() throws DispensingNotAvailableException{
         if(new Date().after(initDate)){
@@ -24,8 +26,10 @@ public class Dispensing {
             throw new DispensingNotAvailableException();
         }
     }
-    public void setProductAsDispensed(ProductID prodID) {
-
+    public void setProductAsDispensed(ProductID prodID) throws NotProductSaleLineException {
+        ProductSaleLine productSaleLine=sale.getProductSaleLine(prodID);
+        MedicineDispensingLine medicineDispensingLine = productSaleLine.getMedicineDispensingLine();
+        medicineDispensingLine.productAcquired();
     }
     public void setCompleted() {
         this.isCompleted=true;
