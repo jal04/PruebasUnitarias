@@ -1,7 +1,8 @@
 package pharmacy.exceptions;
 
 public class DispensingNotCompletedException extends Exception {
-    public DispensingNotCompletedException(String s) {
-
+    public DispensingNotCompletedException(String msg) {
+        super(msg);
     }
 }
+
