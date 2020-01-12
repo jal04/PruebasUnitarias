@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f2dc1b58-3a76-40e5-91e0-ae86ccb9038d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/data/exceptions/FormatException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/HealthCardID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/HealthCardID.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/ProductID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/ProductID.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/NationalHealthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/NationalHealthService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/exceptions/NotValidePrescriptionException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/exceptions/NotValidePrescriptionException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/exceptions/ProductIDException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/exceptions/ProductIDException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/pharmacy/DispensingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/pharmacy/DispensingTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/pharmacy/ProductSpecificationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/pharmacy/ProductSpecificationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/pharmacy/SaleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/pharmacy/SaleTest.java" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,17 +29,25 @@
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/data" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Proves_Unitaries" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -71,15 +76,15 @@
       <recent name="C:\Users\josem\Desktop\PruebasUnitarias\tests" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
+  <component name="ServiceViewManager">
+    <option name="viewStates">
       <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
       </list>
     </option>
   </component>
@@ -93,8 +98,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1578765103086</updated>
+      <workItem from="1578853185531" duration="7008000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -108,5 +117,19 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="137" y="25" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578858212747">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="137" y="25" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738/1366.0.1280.994@0.0.1366.738" timestamp="1578858212747" />
+    <state x="531" y="259" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1578854101781">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="531" y="259" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1366.738/1366.0.1280.994@0.0.1366.738" timestamp="1578854101781" />
+    <state x="379" y="194" key="com.intellij.ide.util.TipDialog" timestamp="1578853188815">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="379" y="194" key="com.intellij.ide.util.TipDialog/0.0.1366.738/1366.0.1280.994@0.0.1366.738" timestamp="1578853188815" />
   </component>
 </project>
