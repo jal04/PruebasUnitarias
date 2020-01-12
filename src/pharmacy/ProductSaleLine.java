@@ -1,5 +1,6 @@
 package pharmacy;
 
+import data.PatientContr;
 import data.ProductID;
 
 import java.math.BigDecimal;

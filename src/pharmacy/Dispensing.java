@@ -16,18 +16,17 @@ public class Dispensing {
     private byte nOrder; // n. of order for this dispensing inside the treatment
     private Date initDate, finalDate; // The period
     private boolean isCompleted;
-    public Sale sale;
     public ArrayList<MedicineDispensingLine> medicines;
     // The set of medicines to dispense and its control, among others
-    public Dispensing(Sale sale, byte nOrder, ArrayList<ProductSpecification> medicines) {
+    public Dispensing(byte nOrder, ArrayList<ProductSpecification> medicines) {
         this.isCompleted=false;
-        this.nOrder=nOrder
+        this.nOrder=nOrder;
         this.initDate=new Date();
-        this.sale = sale;
         for(ProductSpecification product : medicines){
             this.medicines.add(new MedicineDispensingLine(product));
         }
     } // Makes some inicialization
+
     public boolean dispensingEnabled() throws DispensingNotAvailableException {
         if(new Date().after(initDate)){
             return true;
@@ -38,7 +37,7 @@ public class Dispensing {
     public void setProductAsDispensed(ProductID prodID) throws DispensingNotAvailableException {
         if(dispensingEnabled()) {
             for (MedicineDispensingLine medicine : medicines) {
-                if (medicine.productSpecification.UPCcode == prodID) {
+                if (medicine.productSpecification.UPCcode == prodID.getProductID()) {
                     medicine.acquired = true;
                 }
             }
@@ -46,10 +45,12 @@ public class Dispensing {
     }
     public void setCompleted() throws DispensingNotCompletedException, DispensingNotAvailableException{
         if(dispensingEnabled()) {
-            for (MedicineDispensingLine medicine : medicines)
+            for (MedicineDispensingLine medicine : medicines){
                 if (!medicine.acquired) {
                     throw new DispensingNotCompletedException("More to dispense.\n");
                 }
+            }
+            this.finalDate=new Date();
             this.isCompleted = true;
         }
     }
