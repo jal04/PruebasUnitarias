@@ -1,4 +1,7 @@
 package data;
+
+import data.exceptions.FormatException;
+
 /**
  * The product identifying code in the National Health Service.
  */
@@ -7,7 +10,7 @@ final public class ProductID {
 
     public ProductID(String code) throws Exception {
         if(code==null) throw new NullPointerException("code is null");
-        if(code.length()!=12) throw new Exception("Incorrect format code.");   //En el caso en que un mal formato sea que tenga menos de 16 digitos.
+        if(code.length()!=12) throw new FormatException("Incorrect format code.");   //En el caso en que un mal formato sea que tenga menos de 16 digitos.
         this.productID = code;
     }
     public String getProductID() {

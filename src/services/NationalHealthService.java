@@ -4,6 +4,10 @@ import data.HealthCardID;
 import data.PatientContr;
 import data.ProductID;
 import pharmacy.Dispensing;
+import pharmacy.ProductSpecification;
+import services.exceptions.HealthCardException;
+import services.exceptions.NotValidePrescriptionException;
+import services.exceptions.ProductIDException;
 
 import java.net.ConnectException;
 import java.util.List;
