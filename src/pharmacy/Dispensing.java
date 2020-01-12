@@ -3,7 +3,6 @@ package pharmacy;
 import data.ProductID;
 import pharmacy.exceptions.DispensingNotAvailableException;
 import pharmacy.exceptions.DispensingNotCompletedException;
-import pharmacy.exceptions.NotProductSaleLineException;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -31,9 +30,11 @@ public class Dispensing {
         if(new Date().after(initDate)){
             return true;
         }else{
-            throw new DispensingNotAvailableException();
+            throw new DispensingNotAvailableException("Out of Date.");
         }
     }
+
+
     public void setProductAsDispensed(ProductID prodID) throws DispensingNotAvailableException {
         if(dispensingEnabled()) {
             for (MedicineDispensingLine medicine : medicines) {

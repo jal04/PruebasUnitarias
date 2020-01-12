@@ -8,7 +8,6 @@ import pharmacy.exceptions.SaleClosedException;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
 
 /**
  * Package for the classes involved in the use case Suply next dispensing
@@ -66,6 +65,6 @@ public class Sale { // A class that represents the sale of medicines
             if (productSaleLines.get(i).productID == productID){
                 return productSaleLines.get(i);
             }
-        } throw new NotProductSaleLineException();
+        } throw new NotProductSaleLineException("ProductSaleLine not exist.");
     }
 }
